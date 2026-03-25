@@ -60,7 +60,7 @@ async def check_status():
                         online_status[online_player] = True
 
         else:
-            raise Exception('The latest log was not list.')
+            print('The latest log was not list.')
         
 
 async def send_offline(player_name: str):
