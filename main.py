@@ -41,6 +41,7 @@ async def check_status():
             for index in range(13):
                 del words[0] # Delete the first 11 words from words
             players = words # this is a list of players by username
+            players = [x.replace(',', '') for x in players]
             print(f'Playerlist: {players}')
             if players == ['']:
                 for player in online_status.keys():
